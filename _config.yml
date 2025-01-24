@@ -1,0 +1,42 @@
+# Basic Configuration
+title: Your Site Title
+description: A brief description of your site
+url: "https://yourusername.github.io"
+baseurl: "/Test-Alter-Documentation"
+
+# Markdown Processor
+markdown: kramdown
+
+# Kramdown Options
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+
+# Relative Links Configuration
+relative_links:
+  enabled: true
+  collections: true
+
+# Include Specific Files
+include:
+  - README.md
+  - LICENSE.md
+
+# Exclude Default Folders
+exclude:
+  - "node_modules"
+  - "vendor"
+  - ".gitignore"
+  - ".travis.yml"
+  - ".github"
+
+# Theme
+theme: jekyll-theme-hacker # You can change this to any Jekyll theme
+
+# Build Settings
+highlighter: rouge
