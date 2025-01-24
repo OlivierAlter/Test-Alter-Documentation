@@ -19,7 +19,8 @@ kramdown:
 # Plugins
 plugins:
   - jekyll-relative-links
-  - jekyll-toc 
+  - jekyll-toc
+  - jekyll-anchor-links
 
 jekyll-toc:
   maxdepth: 2
