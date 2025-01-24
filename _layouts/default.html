@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <div class="page-content">
+    <div id="left-side" class="sidebar">
+      {% if page.toc %}
+        <h2>Table of Contents</h2>
+        {{ page.toc | markdownify }}
+      {% endif %}
+    </div>
+    <div class="main-content">
+      {{ content }}
+    </div>
+  </div>
+</body>
+</html>
