@@ -7,6 +7,9 @@ baseurl: "/Test-Alter-Documentation"
 # Markdown Processor
 markdown: kramdown
 
+kramdown:
+  toc_levels: "1, 2"
+
 # Kramdown Options
 kramdown:
   input: GFM
@@ -16,6 +19,11 @@ kramdown:
 # Plugins
 plugins:
   - jekyll-relative-links
+  - jekyll-toc 
+
+jekyll-toc:
+  maxdepth: 2
+
 
 # Relative Links Configuration
 relative_links:
