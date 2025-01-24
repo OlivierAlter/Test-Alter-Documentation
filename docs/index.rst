@@ -5,9 +5,6 @@ Welcome to Your Project's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   getting_started
-   invoking_alter
+
+   invoking
    alter_window
-   choosing_your_language
-   core_features
-   alter_actions
