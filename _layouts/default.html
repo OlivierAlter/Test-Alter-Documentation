@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title | default: site.title }}</title>
+  </head>
+  <body>
+    <aside id="sidebar">
+      {% if page.toc %}
+        <h2>Table of Contents</h2>
+        <ul id="toc">
+          {% for item in page.toc %}
+            <li><a href="#{{ item.anchor }}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </aside>
+    <section id="main-content">
+      {{ content }}
+    </section>
+  </body>
+</html>
