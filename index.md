@@ -1,8 +1,8 @@
 
 
-# Getting Started
+# <a id="getting-started">Getting Started</a>
 
-## Invoking Alter
+## <a id="invoking-alter">Invoking Alter</a>
 
 ### The Notch
 
