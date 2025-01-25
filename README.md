@@ -1,4 +1,7 @@
-
+# Alter - Documentation
+```
+Last update - Alter 2 beta 6
+```
 
 # Getting Started
 
@@ -107,14 +110,27 @@ This section lets you add more elements to your context.
 
 ## Choosing Your Generative Model
 
-By default, Alter offers a variety of models, listed alphabetically by their hosting company.  
+By default, Alter offers a variety of models, listed alphabetically by their hosting company.
+
+You can also use your [API key](#via-your-api-key) or use [your local model](#locally-via-ollama-or-studiolm).
+
+### Choosing your model 
+
+After opening Alter, just type `/` to show available models and select the model you want to use.
+![Choosing your model](https://s13.gifyu.com/images/SeVxG.gif)
+
+#### Chosing a favourite model
+
+Select with your mouse the pin icon next to a model to select the model as your favourite
+![CleanShot 2025-01-25 at 14.36.17@2x](https://hackmd.io/_uploads/HJZrD_Gdyg.png)
+
 
 When using your API key or a local model, these appear at the top under **Custom**.  
 All other interactions are routed through Alter Cloud.
 
 > To view all available models, visit (LINK TO PUT).
 
-### Via Alter Cloud
+### Using Alter Cloud
 
 By default, you connect to models via Alter Cloud.
 The default model is **Claude-3.5-Sonnet-Latest**.
@@ -124,7 +140,7 @@ The default model is **Claude-3.5-Sonnet-Latest**.
 You can change the default model in **Settings > Defaults > Model**.  
 > To view all available models, visit (LINK TO PUT).
 
-### Via Your API Key
+### Using Your API Key
 
 You can use your own API key to connect directly to your provider's endpoint:  
 1. Go to **Settings > Defaults > Custom Endpoint**.  
@@ -136,7 +152,7 @@ You can use your own API key to connect directly to your provider's endpoint:
 
 Your provider's models will be listed under the **Custom** section.
 
-### Locally via Ollama or StudioLM
+### Locally using Ollama or StudioLM
 
 ![Custom Local](https://s7.gifyu.com/images/SeW9i.png)
 
@@ -204,7 +220,7 @@ NEED VIDEO HOSTING
 ![Transcirpt audio](https://s7.gifyu.com/images/SeWuj.gif)
 
 
-> If you drop a video file in Alter, we will extract the audio track, and try to transcribe it. It may or may not work, as it is a unsupported feature :)
+> If you drop a video file in Alter, it will try to extract the audio, and probabaly not work. Stay tuned on this 
 
 
 ### Workspaces
@@ -214,7 +230,9 @@ A workspace is a collection of files and folders grouped for easy access in Alte
 NEED VIDEO HOSTING
 ![Transcirpt audio](https://s13.gifyu.com/images/SeWiq.gif)
 
-- **Create**: In your context window, drag and drop multiple files together .  
+- **Create with your mouse**: In your context window, drag and drop multiple files together .  
+- - **Create with your keyboard**: Select the file(s) and/or folder, and press CMD+J .  
+
 - **Rename**: Double-click the workspace to edit the title.  
 
 > Adding folders to a workspace enables automatic monitoring and indexing of new files.
@@ -244,7 +262,11 @@ During online calls, Alter suggests recording via a subtle notification.
 
 (CHECK LATER THE TRANCRIPTs WORKFLOW)
 
-> You can find your recordings and your transcripts in `~/Library/Application Support/Alter/Transcripts`
+> You can find your recordings and your transcripts in
+>  `~/Library/Application Support/Alter/Transcripts`
+
+>In the case Alter crashes, there is a fair chance you could find the audio file in the following folder:
+> `/private/var/folders` and search for filles called "recording" 
 
 ### Alter Actions - Workflows
 
